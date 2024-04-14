@@ -1,0 +1,2 @@
+# jogodeadivinhacaoexercicio
+Exercicio-do-afrocodigo
