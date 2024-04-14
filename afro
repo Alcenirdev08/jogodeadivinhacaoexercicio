@@ -1,0 +1,20 @@
+const prompt = require("prompt-sync")();
+let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+let tentativas = 0;
+
+console.log("Bem vindo ao Jogo de adivinhação");
+
+while (true) {
+    let chute = parseInt(prompt("Digite seu chute: "));
+    tentativas++;
+
+    if (chute < numeroSecreto) {
+        console.log("Número menor!");
+    } else if (chute > numeroSecreto) {
+        console.log("Número maior!");
+    } else {
+        console.log(Parabéns! Você acertou o número secreto: ${numeroSecreto});
+        console.log(Número de tentativas: ${tentativas});
+        break;
+    }
+}
